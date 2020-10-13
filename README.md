@@ -1,1 +1,3 @@
-# binary-coffee-edge-extension
+# Binary Coffee
+---
+Binary coffee extension for recent articles.
