@@ -1,10 +1,10 @@
 {
     "author": "stescobedo92",
-    "description": "Extension that returns all the new articles published in the binary-coffee",
+    "description": "Extension that returns all the new articles published in the https://binary-coffee.dev blog",
     "manifest_version": 2,
     "name": "Binary Coffee Articles",
     "version": "1.0",
-    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+    "homepage_url": "https://github.com/stescobedo92/binary-coffee-edge-extension.git",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
