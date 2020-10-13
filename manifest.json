@@ -1,0 +1,31 @@
+{
+    "author": "stescobedo92",
+    "description": "Extension that returns all the new articles published in the binary-coffee",
+    "manifest_version": 2,
+    "name": "Binary Coffee Articles",
+    "version": "1.0",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+
+    "permissions": [
+        "*://*/*"
+    ],
+    "scripts": [{
+        "js": ["script.js", "popup/jquery.min.js"],
+        "matches": ["*://*/*"]
+    }],
+
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Binary Coffee Articles",
+        "default_popup": "popup/index.html"
+    }
+}
