@@ -11,11 +11,8 @@
         "128": "icons/icon128.png"
     },
 
-    "permissions": [
-        "*://*/*"
-    ],
-    "scripts": [{
-        "js": ["script.js", "popup/jquery.min.js"],
+    "context_script": [{
+        "js": ["scripts/script.js", "scripts/jquery.min.js"],
         "matches": ["*://*/*"]
     }],
 

@@ -1,0 +1,148 @@
+* {
+    font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+    background-color: #f4fffb;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+header {
+    top: 0;
+}
+
+.header-name {
+    color: #42b98f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.header-name>img {
+    padding: 6px;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #cff0e5;
+}
+
+.post-number {
+    background-color: #cff0e5;
+    color: #1f3b50;
+    padding: 6px 6px 6px 12px;
+}
+
+.post-link {
+    color: #42b98f;
+    flex: content;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.post:hover {
+    background-color: #ecf9f5;
+}
+
+.post {
+    background-color: white;
+}
+
+.post-name {
+    margin: 0;
+    padding: 0;
+    color: #42b98f;
+}
+
+.post-data {
+    text-align: justify;
+}
+
+
+/* Loading */
+
+.hidden {
+    display: none !important;
+}
+
+.loading {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading>svg {
+    position: fixed;
+    animation: loading-anim-zoomin 0.5s ease;
+}
+
+.t1 {
+    opacity: 0;
+    animation: text-anim 1s ease infinite;
+    animation-delay: 0.6s;
+}
+
+.t2 {
+    opacity: 0;
+    animation: text-anim 1s ease infinite;
+    animation-delay: 0s;
+}
+
+.t3 {
+    opacity: 0;
+    animation: text-anim 1s ease infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes text-anim {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes loading-anim-zoomin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
