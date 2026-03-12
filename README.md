@@ -68,14 +68,6 @@ binary-coffee-edge-extension/
 | `notifications` | Alert users when new articles are published |
 | `scripting` | Runtime script injection support |
 
-## API
-
-The extension communicates with the Binary Coffee GraphQL API at `https://api.binarycoffee.dev/graphql` to fetch articles, authenticate users, post comments, and toggle likes.
-
-## Author
-
-**Sergio Triana Escobedo** — [@stescobedo92](https://github.com/stescobedo92)
-
 ## License
 
 This project is open source. See the repository for license details.
