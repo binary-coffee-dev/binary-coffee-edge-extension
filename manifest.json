@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Binary Coffee Articles",
+    "version": "2.0",
+    "description": "Browse, search, and interact with articles from the Binary Coffee blog",
+    "author": "stescobedo92",
+    "homepage_url": "https://github.com/stescobedo92/binary-coffee-edge-extension.git",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Binary Coffee Articles",
+        "default_popup": "popup/index.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://api.binarycoffee.dev/*",
+        "https://binarycoffee.dev/*"
+    ]
+}
